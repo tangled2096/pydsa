@@ -9,7 +9,7 @@ def bucket_sort(A):
     """
     buckets = [[] for x in range(11)]
     for i, x in enumerate(A):
-        buckets[(int)x//10].append(x)
+        buckets[x//10].append(x)
     out = []
     for buck in buckets:
         out += isort(buck)
