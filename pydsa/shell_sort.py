@@ -10,7 +10,7 @@ def shell_sort(A):
         >>> shell_sort(A)
         [1, 2, 3, 4, 9, 12]
     """
-    inc = len(A) / 2
+    inc = len(A) // 2
     while inc:
         for i in range(len(A)):
             j = i
@@ -19,5 +19,5 @@ def shell_sort(A):
                 A[j] = A[j - inc]
                 j -= inc
             A[j] = temp
-        inc = inc/2 if inc/2 else (0 if inc == 1 else 1)
+        inc = inc//2 if inc//2 else (0 if inc == 1 else 1)
     return A
