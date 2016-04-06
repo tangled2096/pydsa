@@ -1,4 +1,5 @@
 # Shell sort
+#Complexity: Best case: O(n log2 n), Average case: depends on gap sequence, Worst case: О(n^2)
 
 
 def shell_sort(A):
